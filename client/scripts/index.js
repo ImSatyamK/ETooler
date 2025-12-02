@@ -1,7 +1,7 @@
-const addtestBtn = document.getElementById('addtestBtn');
+const toolPareeksha = document.getElementById('toolPareeksha');
 
-if (addtestBtn) {
-    addtestBtn.addEventListener('click', () => {
+if (toolPareeksha) {
+    toolPareeksha.addEventListener('click', () => {
         window.location.assign('pages/addtest.html');
     });
 } else {
