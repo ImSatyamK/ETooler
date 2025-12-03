@@ -1,9 +1,9 @@
-const toolPareeksha = document.getElementById('toolPareeksha');
+const mockTest = document.getElementById('mockTest');
 
-if (toolPareeksha) {
-    toolPareeksha.addEventListener('click', () => {
-        window.location.assign('pages/addtest.html');
+if (mockTest) {
+    mockTest.addEventListener('click', () => {
+        window.location.assign('pages/mocktest.html');
     });
 } else {
-    console.warn('addtestBtn not found in DOM');
+    console.warn('mockTest not found in DOM');
 }
