@@ -1,20 +1,19 @@
-const prevBtn = document.getElementById('prevBtn');
-const markBtn = document.getElementById('markBtn');
-const nextBtn = document.getElementById('nextBtn');
+const takeTestBtn = document.getElementById('takeTestBtn');
+const createTestBtn = document.getElementById('createTestBtn');
 
-const examplePaper = {
-    'instructions':[],
-
-    'questions':{
-        'Your question will be here.': ['Option 1', 'Option 2', 'Option 3', 'Option 4'],
-        'This is another question.': ['Option A', 'Option B', 'Option C', 'Option D'],
-        'This question is of type true/false.': ['True', 'False'],
-        'This question is of type entering your answer.': []
-    },
-
-    'answers':[]
+if (takeTestBtn) {
+    takeTestBtn.addEventListener('click', () => {
+        window.location.assign('pages/takeTest.html');
+    });
+} else {
+    console.warn('takeTestBtn not found in DOM');
 }
 
-prevBtn.addEventListener('click', () => {
-    
-});
+if (createTestBtn) {
+    createTestBtn.addEventListener('click', () => {
+        alert('Redirecting to Create Test Page');
+        window.location.assign('../pages/createTest.html');
+    });
+} else {
+    console.warn('createTestBtn not found in DOM');
+}
